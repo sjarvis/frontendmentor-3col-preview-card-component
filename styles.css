@@ -56,11 +56,104 @@ h6 {
 h1,
 h2,
 h3 {
-     font-family: 'Big Shoulders Display', cursive;
-     color: var(--trans-white);
+     font-family: 'Big Shoulders Display', sans-serif;
+     color: var(--lt-grey);
 }
+
+h1 {
+     font-size: 2rem;
+}
+
+h2 {
+     font-size: 2.5rem;
+     text-transform: uppercase;
+}
+
+h3 {
+     font-size: 1.2rem;
+}
+
 
 body {
      font-family: 'Lexend Deca', sans-serif;
      color: var(--trans-white);
+}
+
+.wrapper {
+     max-width: 100%;
+     margin-block: 4rem;
+     margin-inline: .5rem;
+     background-color: var(--lt-grey);
+
+
+     display: flex;
+
+     flex-direction: column;
+
+     border-radius: .75rem;
+     overflow: hidden;
+}
+
+.wrapper .cars {
+     padding: 2rem;
+}
+
+.wrapper .sedans {
+     background-color: var(--bright-orange);
+}
+
+.wrapper .suvs {
+     background-color: var(--dark-cyan);
+}
+
+.wrapper .luxury {
+     background-color: var(--v-dk-cyan);
+}
+
+.wrapper .cars img {
+     margin-block: 2rem;
+}
+
+.wrapper .cars button {
+     background-color: var(--lt-grey);
+     margin-block: 2rem;
+     border-radius: 999rem;
+     border: none;
+     padding: .75rem 2rem;
+     font-size: .9rem;
+}
+
+.wrapper .sedans button {
+     color: var(--bright-orange);
+}
+
+.wrapper .suvs button {
+     color: var(--dark-cyan);
+}
+
+.wrapper .luxury button {
+     color: var(--v-dk-cyan);
+}
+
+.wrapper .cars button:hover,
+.wrapper .cars button:active {
+     color: var(--lt-grey);
+     background-color: transparent;
+     outline: 2px solid var(--lt-grey);
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+     .wrapper {
+          max-width: 60%;
+          margin-inline: auto;
+          flex-direction: row;
+     }
+
+     .wrapper .cars {
+          padding: 3rem;
+     }
 }
